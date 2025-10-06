@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+             height: 100vh;
+            width: 100vw;
+
+        }
+        .name {
+ position: relative;
+ top: 220px;
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           justify-content: center;
+            
+        }
+        .container {
+                height: 100vh;
+            width: 100vw;
+            background: url(IMG_20240920_235238.jpg) center/cover no-repeat; 
+            
+            }
+   h2 {
+       font-family: 'Bagel Fat One', cursive;
+       color: rgb(224, 240, 247);
+       font-size: 60px;
+       text-align: center;
+         margin-left: 100px;
+         text-shadow: 2px 2px 4px rgb(255, 149, 0);
+        font-weight: lighter;
+        line-height: 65px;
+        
+   }
+ nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  font-family: 'Bagel Fat One', cursive;
+  font-size: 20px;
+  z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 100%; 
+}
+
+.download-button-li {
+    margin-right: auto;
+}
+
+#check {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+} a {
+      text-decoration: none;
+      color: rgb(224, 240, 247);
+     
+  }
+  a:hover {
+      color: #ed803d;
+      transition: 0.3s;
+       -webkit-text-stroke: 1px rgb(0, 0, 0);
+      
+  }
+  p {
+    position: relative;
+      font-family: 'Bagel Fat One', cursive;
+      color: rgb(224, 240, 247);
+      font-size: 20px;
+      text-align: center;
+      text-shadow: 1px 1px 4px rgb(255, 149, 0);
+      margin-left: 145px;
+     
+ bottom: 50px;
+      font-weight: lighter;
+  }
+ 
+   
+   
+  
+  footer {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    font-family: 'Bagel Fat One', cursive;
+      color: rgb(224, 240, 247);
+      font-size: 18px;
+      text-shadow: 1px 1px 1px rgb(255, 149, 0);
+          font-weight: 100;
+  }
+  @media (max-width: 600px) {
+    .name {
+        top: 150px;
+        align-items: center;
+        width: 100%;
+        padding: 0 15px;
+    }
+    h2 {
+        font-size: 50px;
+        margin-left: 0;
+        line-height: 1.2;
+    }
+    p {
+        margin-left: 0;
+        bottom: 0;
+    }
+    nav {
+        padding: 15px 20px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        justify-content: flex-end;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        height: 100vh;
+        width: 70%;
+        background-color: #111;
+        flex-direction: column;
+        justify-content: center;
+        transition: left 0.5s ease;
+    }
+    .download-button-li {
+        margin-right: 0;
+    }
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 21px;
+        z-index: 1001;
+    }
+    .hamburger-icon span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(224, 240, 247);
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+    #check:checked ~ ul {
+        left: 30%;
+    }
+    #check:checked + .hamburger-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #check:checked + .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    #check:checked + .hamburger-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+    </style>
+</head>
+<body>
+  
+ <div class="container">
+    <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul>
+        <li class="download-button-li"><a href="resume.pdf" download>Download Resume</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portaboutme.html">About me</a></li>
+        <li><a href="portcontactme.html">Contact</a></li>
+    </ul>
+</nav>
+    <div class="name">
+   <h2>Karthik <br>
+    Kanigolla
+   </h2>
+   <p>Student at SST</p>
+   </div>
+   <footer>-Made by yours truly.</footer>
+   
+    </div>
+
+</body>
+</html>

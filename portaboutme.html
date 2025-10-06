@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+             background: linear-gradient(135deg, #1d1e1f 0%, #262729 100%);
+       
+        }
+  
+        
+nav {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 50px;
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 20px;
+    z-index: 1000;
+} nav a {
+      text-decoration: none;
+      color: rgb(224, 240, 247);
+      z-index: 1;
+  }
+   nav a:hover {
+      color: #ed803d;
+      transition: 0.3s;
+       -webkit-text-stroke: 1px rgb(0, 0, 0);
+      
+  }
+  .card {
+  
+  
+    margin: 10px;
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+position: relative;
+  background: rgba(29, 29, 29, 0.866);
+  backdrop-filter: blur(2px) saturate(180%);
+  border: 2px solid rgb(241, 160, 54);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(255, 132, 0, 0.2);
+        
+transition-duration: 1s;
+
+
+  }
+  .card:hover {
+    transform: scale(1.005);
+  }
+
+
+  
+
+ .hobbies {
+  grid-row: 1/3;
+  grid-column: 1/2;
+ }
+ .social-links {
+  grid-column: 2/4;
+  grid-row: 1/2;
+    display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center
+ }
+
+ 
+  .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+   
+       opacity: 0.2;
+      }
+      h4 {
+          font-family: 'Bagel Fat One', cursive;
+      color: rgb(255, 157, 0);
+      font-size: 40px;
+      text-align: center;
+      text-shadow: 0.1px 0.1px 4px rgb(255, 149, 0);
+      
+            animation-name: fade;
+          animation-timing-function: ease-in;
+          animation-duration: 1.5s;
+          opacity: 1;
+          line-height: 45px;
+          font-weight: lighter;
+      
+      }
+      p {
+             font-family: 'Bagel Fat One', cursive;
+      color: rgb(224, 240, 247);
+      font-size: 20px;
+      text-align: center;
+      text-shadow: 0.01px 0.01px 4px rgba(255, 149, 0, 0.756);
+          font-weight: 100;
+          animation-name: fade;
+          animation-timing-function: ease-in;
+          animation-duration: 1.5s;
+          opacity: 1;
+      
+      }
+      @keyframes fade {
+        0%  {
+  opacity: 0;
+}
+50%  {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+
+
+}
+      a {
+        text-decoration: none;
+      }
+      .hero {
+         display: grid;
+   grid-template-columns: repeat(3, 325px);
+   grid-template-rows: repeat(2, 250px);
+  
+
+   gap: 15px;
+   
+      }
+      .container {
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        height: 100vh
+      }
+      .hobbies h4 {
+        position: relative;
+      bottom: 50px;
+      }
+      .social-links h4 {
+        position: relative;
+      
+      
+      }
+      a img {
+        width: 75px;
+        height: 75px;
+        margin:  5px;
+        border-radius: 10px;
+
+      }
+      .iconlink {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+      }
+      .hobbies div p {
+        position: relative;
+        bottom: 50px;
+      }
+ 
+      .Skills {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: 420px;
+        place-content: center;
+         width: 100vw;
+        height: 100vh;
+        gap: 25px;
+        position: relative;
+        bottom: 100px;
+      }
+      .Skills div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    .Skills h4 {
+      font-size: 27px;
+    }
+   .project div {
+  
+    height: 400px;
+    
+   }
+  
+      .project {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 20px;
+      place-content: center;
+      position: relative;
+      bottom: 100px;
+       
+      }div video {
+        width: 200px;
+       
+      }
+      img {
+        width: 300px;
+    
+      }
+      a {
+              font-family: 'Bagel Fat One', cursive;
+                text-shadow: 0.1px 0.1px 4px rgb(255, 149, 0);
+                text-decoration: none;
+                color: white;
+      }
+      .Skills div div p {
+        position: relative;
+        bottom: 30px;
+      }
+.h4 {
+  position: relative;
+  bottom: 10px;
+}
+.container > p {
+  position: relative;
+  bottom: 50px;
+}
+#a, #b {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+ nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+#check {
+  display: none;
+}
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(224, 240, 247);
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+@media (max-width: 768px) {
+    .container, #a, #b {
+        height: auto;
+        padding-top: 80px;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 90vw;
+    }
+    .hobbies, .social-links {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .Skills {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 90vw;
+        height: auto;
+    }
+    .project {
+        grid-template-columns: 1fr;
+        width: 90vw;
+        height: auto;
+    }
+    .project img, .project video {
+        width: 80%;
+        height: auto;
+    }
+    #a > h4, #b > h4 {
+      position: relative;
+      bottom: 60px;
+    }
+    nav {
+        padding: 15px 20px;
+        background-color: rgba(29, 29, 29, 0.866);
+    }
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 21px;
+    }
+    nav ul {
+        position: fixed;
+        left: 100%;
+        top: 0px;
+        width: 70%;
+        height: 100vh;
+        background-color: #111;
+        flex-direction: row; 
+        justify-content: space-around;
+        align-items: center;
+        gap: 15px; 
+        transition: left 0.5s ease;
+    }
+    #check:checked ~ ul {
+        left: 30%;
+    }
+    #check:checked + .hamburger-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #check:checked + .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    #check:checked + .hamburger-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+</style>
+
+</head>
+<body>
+  <nav class="stick">
+  <input type="checkbox" id="check">
+  <label for="check" class="hamburger-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <ul>
+     <li> <a href="index.html">Home</a></li>
+     <li> <a href="portaboutme.html">About me</a></li>
+     <li> <a href="portcontactme.html">Contact</a></li>
+  </ul>
+</nav>
+      <video src="vecteezy_high-speed-fiber-data-transfer-5g-4g-bits-internet-ai_24148816.mp4" autoplay loop muted class="video-background">
+      </video>
+   
+    <div class="container">
+
+    <h4>About Me</h4>
+   <p>As a fresher, I am excited to build a solid repertoire of experience with the opportunities at SST.</p>
+    <main class="hero">
+    
+   
+
+
+  <div class="hobbies card">
+   
+   <h4>Hobbies</h4>
+      <div><p>Reading novels</p></div>
+<div><p>Enjoying animated <br> media</p></div>
+<div><p>Cooking</p></div>
+<div><p>Listening to music</p></div> 
+  </div>  
+  
+   <div class="social-links card">
+   
+<h4>Socials</h4> <p></p></a>
+ <div class="iconlink">
+  <a href="https://www.linkedin.com/in/karthik-kanigolla-3120562bb/" target="_blank"><img src="icon png/pngwing.com.png" alt="f"></a>
+  <a href="https://github.com/kanigollakarthik-collab" target="_blank"><img src="icon png/Github-desktop-logo-symbol.svg" alt=""></a>
+  <a href="https://leetcode.com/u/l3fmnV0UEC/" target="_blank"><img src="icon png/LeetCode_Logo_1.png" alt=""></a>
+  <a href="https://codeforces.com/profile/kanigollakarthik" target="_blank"><img src="icon png/image-removebg-preview.png" alt=""></a>
+ </div>
+  </div> 
+  <a href="#b">
+  <div class="projects card">
+   <h4>Projects</h4><p>click to view</p>
+    
+   </div></a>
+     <a href="#a">
+   <div class="experience card">
+    
+          <h4> Skills    
+   </h4> <p>click to view</p>
+  </div></a> 
+   </main>
+    </div>
+    <div id="a">
+      <h4>Skills</h4>
+<div class="Skills" >
+  <div class="card">
+    <h4>Programming <br> Languages</h4>
+    <div><p>C</p></div>
+<div><p>Kotlin</p></div>
+<div><p>Java</p></div>
+<div><p>Python</p></div>
+  </div>
+      <div class="card">
+        <h4 class="h4">Web <br> Development</h4>
+           <div><p>HTML</p></div>
+<div><p>CSS</p></div>
+<div><p>Javascript</p></div>
+      </div>
+      <div class="card">   
+        <h4 class="h4">Miscellaneous</h4>
+        <div><p>Video Editing</p></div>
+<div><p>PPT Making</p></div>
+
+<div><p>Quick <br> learning</p></div>
+      </div>
+</div>
+</div>
+<div id="b">
+  <h4>Projects</h4>
+<div class="project" >
+<div class="card"><img src="Screenshot 2025-10-05 180823.png" alt="">
+<p>I am so grateful to the daydream gamejam because it has taught me to use the unity game engine which enabled me to make this game of ping pong with a evil twist.</p>
+<a href="https://karthik10000.itch.io/pong-but-evil" target="_blank">live link</a>
+</div>
+<div class="card"> <video src="Screen Recording 2025-10-05 161450.mp4" autoplay loop muted class="solar"></video><p>For me simpler is simply better which this project signifies as it's made with a simple keyframes animation. </p>
+<a href="https://kanigollakarthik-collab.github.io/moon-sun/">live link</a>
+</div>
+</div>
+</div>
+</body>
+</html>

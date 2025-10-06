@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Bagel Fat One", cursive;
+        background-color: #000;
+        color: #e0f0f7;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+      }
+    nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 50px;
+  font-family: 'Bagel Fat One', cursive;
+  font-size: 20px;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+} a {
+      text-decoration: none;
+      color: rgb(224, 240, 247);
+  }
+   a:hover {
+      color: #ed803d;
+      transition: 0.3s;
+       -webkit-text-stroke: 1px rgb(0, 0, 0);
+   }
+       .contact-section {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #111;
+        color: #e0f0f7;
+        width: 50%;
+        position: relative;
+        top: 75px;
+       
+        border-radius: 30px;
+      }
+        main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+     
+      }
+
+      .contact-section h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgb(255, 149, 0);
+      }
+
+      .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: "Bagel Fat One", cursive;
+        background-color: #222;
+        color: #fff;
+        box-shadow: 0 0 5px rgba(255, 149, 0, 0.3);
+      }
+
+      .contact-form button {
+        padding: 15px;
+        background-color: #ed803d;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .contact-form button:hover {
+        background-color: #fc7b25;
+      }
+            #check {
+    display: none;
+}
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+ @media (max-width: 768px) {
+    .contact-section {
+      width: 90%;
+    }
+    nav {
+        padding: 15px 20px;
+        justify-content: flex-end;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0,0,0,0.8);
+    }
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 21px;
+        z-index: 1001;
+    }
+    .hamburger-icon span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(224, 240, 247);
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #111;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: left 0.5s ease;
+    }
+    #check:checked ~ ul {
+        left: 30%;
+    }
+    #check:checked + .hamburger-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #check:checked + .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    #check:checked + .hamburger-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+} 
+
+      
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portaboutme.html">About me</a></li>
+        <li><a href="portcontactme.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+     
+    
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form
+          class="contact-form"
+         
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+</body>
+
+</html>
